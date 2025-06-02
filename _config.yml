@@ -1,4 +1,4 @@
-# The Site Configuration
+ # The Site Configuration
 
 # Import the theme
 theme: jekyll-theme-chirpy
@@ -150,7 +150,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "/mmmlofi"
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
