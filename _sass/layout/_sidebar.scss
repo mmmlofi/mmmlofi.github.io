@@ -98,19 +98,29 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   }
 
   .site-title {
-    @extend %clickable-transition;
-    @extend %sidebar-link-hover;
+  position: relative;
+  transition: color 0.3s ease;
 
-    font-family: inherit;
-    font-weight: 900;
-    font-size: 1.75rem;
-    line-height: 1.2;
-    letter-spacing: 0.25px;
-    margin-top: 1.25rem;
-    margin-bottom: 0.5rem;
-    width: fit-content;
-    color: var(--site-title-color);
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--sidebar-active-color);
+    transition: width 0.3s ease;
   }
+
+  &:hover {
+    color: var(--sidebar-active-color);
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
 
   .site-subtitle {
     font-size: 95%;
@@ -136,29 +146,16 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
         @include mx.pl-pr(2.75rem);
       }
 
-      a.nav-link {
-        @include mx.pt-pb(0.6rem);
+    a.nav-link {
+      transition: all 0.3s ease;
 
-        display: flex;
-        align-items: center;
-        border-radius: 0.75rem;
-        font-weight: 600;
-
-        &:hover {
-          background-color: var(--sidebar-hover-bg);
-        }
-
-        i {
-          font-size: 95%;
-          opacity: 0.8;
-          margin-right: 1.5rem;
-        }
-
-        span {
-          font-size: 90%;
-          letter-spacing: 0.2px;
-        }
+      &:hover {
+        color: var(--sidebar-active-color);
+        border-left: 4px solid var(--sidebar-active-color);
+        padding-left: 1.25rem;
+        background-color: transparent; // 기존 배경 제거
       }
+    }
 
       &.active {
         .nav-link {
