@@ -15,6 +15,3 @@ gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-compose', group: [:jekyll_plugins]
-
-gem "tzinfo"       # 시간대 관리 라이브러리
-gem "tzinfo-data"  # Windows에서 tzinfo를 지원하기 위한 데이터
