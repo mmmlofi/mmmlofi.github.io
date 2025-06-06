@@ -26,6 +26,6 @@ drive.mount('/content/drive')  # 드라이브 마운트
 %cd /content/drive/내_깃_저장소_경로 # ✅ %cd로 제대로 이동
 
 !ls -a  # .git 폴더 있는지 확인
-!git status  # 정상 작동 확인
+!git status  # 정상 작동 확인 ```
 
 오늘도 하나 배우고 갑니다.
