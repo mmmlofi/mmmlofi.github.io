@@ -6,11 +6,11 @@ tags: [colab,git,repository,오류,fatal]  # TAG names should always be lowercas
 pin : true
 ---
 ## 😵 문제 상황
-> Colab에서 GitHub 저장소랑 연동하고 분명 테스트도 했는데 오늘 깃 푸쉬하려니까 안됨
+> Colab에서 GitHub 저장소랑 연동하고 분명 테스트도 했는데 오늘 깃 푸쉬하려니까 안됨  
 > fatal: not a git repository (or any of the parent directories): .git
-> 흠 전엔 됐는데 이번엔 왜 안됐지?
+> ->지금 있는 폴더는 Git 저장소가 아님!  전엔 됐는데 왜 안될깝숑
 > 1. 첨에 마운트 안함
-> 2. 엥 근데 마운트 하고 경로 이동 (!cd) 했는데도 안됨 ㅡㅡ!!
+> 2. 엥 근데 마운트 하고 경로 이동 !cd 했는데도 안됨 ㅡㅡ!!
 
 ## 🧠 원인 분석
 Colab에서는 내가 생각하는 `!cd` 명령어가 **진짜 이동이 아니였음!**
