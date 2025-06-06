@@ -1,7 +1,7 @@
 ---
 title: "[Colab/Git] fatal not a git repository 에러 해결 (경로 이동 주의!)"
 date: 2025-06-06 23:39:00 +0900
-categories: [Colab][Git]
+categories: [Colab,Git]
 tags: [colab,git,repository,오류,fatal]  # TAG names should always be lowercase
 pin : true
 ---
