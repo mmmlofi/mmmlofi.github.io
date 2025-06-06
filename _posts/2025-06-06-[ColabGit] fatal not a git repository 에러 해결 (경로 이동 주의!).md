@@ -19,13 +19,14 @@ Colab에서는 내가 생각하는 `!cd` 명령어가 **진짜 이동이 아니�
 - 그 결과 `.git` 폴더가 없어서 **Git 저장소가 아니라고 나오는 것**
 
 ## ✅ 해결 방법: Colab에선 반드시 `%cd`를 써라!
-```python
+```
 from google.colab import drive
 drive.mount('/content/drive')  # 드라이브 마운트
 
 %cd /content/drive/내_깃_저장소_경로  # ✅ %cd로 제대로 이동 
 
 !ls -a  # .git 폴더 있는지 확인
-!git status  # 정상 작동 확인 ```
+!git status  # 정상 작동 확인
+```
 
 오늘도 하나 배우고 갑니다.
