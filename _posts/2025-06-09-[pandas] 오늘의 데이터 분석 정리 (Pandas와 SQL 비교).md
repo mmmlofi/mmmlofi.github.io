@@ -1,7 +1,7 @@
 ---
 
 title: "[pandas] 오늘의 데이터 분석 정리 (Pandas와 SQL 비교)" 
-date: 2025-06-09-12:35:00 +0900
+date: 2025-06-09-00:35:00 +0900
 categories: [data-analysis, pandas] 
 tags: [pandas, dataframe, csv, excel, 데이터분석, python] 
 pin: true
